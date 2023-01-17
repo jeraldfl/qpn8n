@@ -61,7 +61,7 @@
 				<span class="activator">
 					<WorkflowActivator :workflow-active="isWorkflowActive" :workflow-id="currentWorkflowId" />
 				</span>
-				<enterprise-edition :features="[EnterpriseEditionFeature.Sharing]">
+				<!-- <enterprise-edition :features="[EnterpriseEditionFeature.Sharing]">
 					<n8n-button type="secondary" class="mr-2xs" @click="onShareButtonClick">
 						{{ $locale.baseText('workflowDetails.share') }}
 					</n8n-button>
@@ -90,7 +90,7 @@
 							</template>
 						</n8n-tooltip>
 					</template>
-				</enterprise-edition>
+				</enterprise-edition> -->
 				<SaveButton
 					type="primary"
 					:saved="!this.isDirty && !this.isNewWorkflow"
